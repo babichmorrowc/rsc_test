@@ -1,0 +1,26 @@
+---
+title: "Parameter test"
+params:
+  min_date: !r as.Date('2017-12-26')
+output: html_document
+resource_files:
+  - "test_script.R"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+source("test_script.R")
+```
+
+
+## R Markdown
+
+Print the filtered dataframe:
+
+```{r}
+dates_filtered
+```
+
